@@ -36,6 +36,8 @@ Examples
 >>> random_unlabeled_points = np.where(np.random.randint(0, 2,
 ...        size=len(iris.target)))
 >>> labels = np.copy(iris.target)
+
+
 >>> labels[random_unlabeled_points] = -1
 >>> label_prop_model.fit(iris.data, labels)
 ... # doctest: +NORMALIZE_WHITESPACE +ELLIPSIS
